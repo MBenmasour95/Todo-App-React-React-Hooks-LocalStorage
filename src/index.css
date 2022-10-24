@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kavivanar&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #000428, #004e92);
+  background: linear-gradient(to right, #000428, #004e92);
+  color: #fefefe;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "Kavivanar", cursive;
+}
+
+svg {
+  font-size: 22px;
+}
+
+.form {
+  width: 500px;
+  height: 60px;
+}
+
+.form-control:focus {
+  background-color: #fefefe;
+  color: #000428;
+  border: none;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #979797;
+}
+
+.form-control.rounded-start {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.form-label {
+  color: #000428;
+}
+
+.btn.submit {
+  background: #004e92;
+  background: -webkit-linear-gradient(to bottom, #004e92, #000428);
+  background: linear-gradient(to bottom, #004e92, #000428);
+  width: 60px;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.btn {
+  transition: opacity 400ms ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn.delete,
+.btn.delete:active {
+  color: #aa0404 !important;
+  padding: 0;
+}
+
+.btn.clear {
+  height: 40px;
+  background-color: #004e92 !important;
+  border-radius: 4px !important;
+}
+
+.list-group {
+  width: 500px;
+  border-radius: 4px !important;
+}
+
+.list-group-item {
+  min-height: 80px;
+  border-radius: 4px;
+}
+
+.form-label {
+  margin-bottom: 0;
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #004e92;
+}
+
+.checkbox svg {
+  display: none;
+  font-size: 14px;
+  color: #233f58;
+}
+
+.todo.completed .checkbox {
+  background-color: #004e92;
+}
+
+.todo.completed .checkbox svg {
+  display: block;
+}
+
+.todo.completed {
+  background-color: #233f58;
+}
+
+.todo.completed p {
+  color: #7c7c7c;
+  text-decoration: line-through;
+}
+
+.footer {
+  width: 500px;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.spinner {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 580px) {
+  .form,
+  .list-group,
+  .footer {
+    width: 100%;
+  }
+}
